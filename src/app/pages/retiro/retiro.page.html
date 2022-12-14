@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Retiro</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card justify-content-center>
+    
+    <ion-card-content>
+      <ion-item>
+        <ion-label>ID</ion-label>
+        <ion-input [(ngModel)]="producto.id" placeholder="Ingrese ID de producto"></ion-input>
+      </ion-item>
+      <ion-button (click)="retiro()">Retirar</ion-button>
+      <ion-button [routerLink]="['/lista']">Cancelar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

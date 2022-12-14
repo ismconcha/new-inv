@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Ingreso</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card justify-content-center>
+    
+    <ion-card-content>
+      <ion-item>
+        <ion-label>ID</ion-label>
+        <ion-input [(ngModel)]="producto.id" placeholder="Ingrese ID de producto"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+        <ion-input [(ngModel)]="producto.name" placeholder="Ingrese nombre de producto"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Cantidad</ion-label>
+        <ion-input [(ngModel)]="producto.cantidad" placeholder="Ingrese cantidad de producto"></ion-input>
+      </ion-item>
+      <ion-button (click)="ingresar()">Ingresar</ion-button>
+      <ion-button [routerLink]="['/lista']">Cancelar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
